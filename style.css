@@ -1,0 +1,246 @@
+body{
+    background-image: url("wallpaperflare.com_wallpaper_1.jpg");
+    font-family: Arial, Helvetica, sans-serif;
+ 
+    height: 100vh; 
+    
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+        overflow-y: hidden; 
+        overflow-x: hidden; 
+      
+}
+
+
+#x{
+    
+    color: blue;
+    font-size: 30px;
+    font-weight: 600;
+    
+}
+#o{
+    color: #FF007F;
+    font-size: 30px;
+    font-weight: 600;
+}
+#px{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+#po{
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+    font-weight: 700;
+}
+.players{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    text-align: center;  
+}
+.player{ 
+    display: flex;
+    flex-direction:column ;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    height: 110px;
+    width: 95px;
+    border: 2px solid white;
+    border-radius: 15px;
+    background-color: black;
+    color: #f3f2f2;
+      
+}
+span{
+    padding: 10px 0px;
+}
+.container{
+   
+    display: flex;
+    flex-wrap: wrap;
+    width: 290px;
+    margin: 0 auto;
+    border-radius: 20px;
+    cursor: pointer;
+    margin-bottom: 20px;
+    
+}
+.grid{  
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 95px;
+    height: 95px;
+    border: 2px solid #f3f2f2;
+    border-radius: 8px;   
+    font-size: 40px;
+    font-weight: 700; 
+    cursor: pointer;  
+    background-color:black;
+    margin: 1px 1px 0px 0px;     
+}
+.gameplay{
+    position: relative;
+    text-align: center;
+    align-items: center;
+    justify-content: center; 
+    font-family: Arial, Helvetica, sans-serif;
+    cursor:default;
+}
+#back{
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: #ff004c;
+    border: 1px solid black;
+    font-size: 17px;
+    font-weight: 700;
+    margin-top: 5px;
+    margin-left: 10px;
+    display: inline;
+    cursor: pointer;
+}
+#reset{
+   
+    padding: 5px 20px;
+    border-radius: 7px;
+    background-color: #ff004c;
+    border: 1px solid black;
+    font-size: 20px;
+    font-weight: 700;
+    cursor: pointer; 
+}
+#reset:hover{
+    transform: scale(1.05);   
+}
+#back:hover{
+    transform: scale(1.05); 
+}
+
+.gtype img{
+    height: 200px;
+    width: 200px;
+    border: 2px solid rgb(36, 2, 2);
+    border-radius: 20px;
+    margin-bottom: 20px;
+    
+}
+.gtype button{
+    width: 100%;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #ff004c;
+    font-weight: bold;
+    font-size: 15px;
+    cursor: pointer;
+}
+.game{
+    /* height: 200px;
+    height: 200px; */
+    display: flex;
+    flex-direction:column;
+    font-size: 20px;
+    text-align: center;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 40px;
+    
+}
+.gtype{
+    display: flex;
+    flex-direction:row;
+    justify-content: center;
+    align-items: center;
+    margin-top: 7%;
+  
+}
+.gametype{
+
+    display: block;
+  font-weight: bold;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 100%;
+  height: 100vh;
+  padding: 20px;
+  
+ 
+}
+h1{
+    display: none;
+    color: rgb(20, 20, 16); 
+    background-color: rgb(248, 244, 4);
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  /* z-index: 2; */
+  width: 50%;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+    
+}
+h3{
+    color: #f3fff3;
+    font-weight: 700;
+    font-size: 30px;
+    text-align: center;
+   
+}
+h2{
+    text-align: center;
+    color: #faf8f8;
+    font-size: 30px;
+    
+    
+}
+@media only screen and (max-width: 600px) {
+    .container{  
+        margin: 10px auto; 
+        margin-bottom: 20px; 
+
+    }
+    .players{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        text-align: center; 
+        margin-bottom: 30px; 
+    }
+    .player{
+        margin: 10px;
+    }
+    h3{
+        display: flex;
+        flex-wrap: wrap;
+
+    }
+    .gtype{
+        display: flex;
+        flex-direction:column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 7%;
+      
+    }
+    #back{
+        margin-top: 10px;
+        margin-bottom: 20px;
+    }
+    .game{
+        margin-bottom: 20px;
+    }
+  }
