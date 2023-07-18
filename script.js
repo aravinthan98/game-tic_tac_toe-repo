@@ -49,7 +49,8 @@ btn.onclick=(e)=>{
     
    if(!box.innerHTML&&!gameover){
     moves++;
-    box.innerHTML=cur
+    box.innerHTML=cur;
+    board[box.id]=cur;
     if(cur==='X'){
         box.style.color="blue";
         pr2.style.borderColor='yellow'
@@ -201,14 +202,14 @@ function checkresult(player){
                 win.innerHTML=`Player 2 Winner`
                }    
            break;
-        }
-        else if(moves===9&&!gameover){
-            gameover=true;
-            win.style.display='block'
-            win.innerHTML=`Draw! The match is drawn`;
-            break;
         }    
     }  
+    if(moves===9&&!gameover){
+        gameover=true;
+        win.style.display='block'
+        win.innerHTML=`Draw! The match is drawn`;
+        
+    }
 }
   
 function resetgame(){
